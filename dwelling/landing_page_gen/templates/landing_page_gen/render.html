@@ -1,0 +1,448 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" >
+		<title>Dwelling Template 1</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="{{logo}}" type="image/x-icon">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<!-- Bootstrap 4.5.2 CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<!-- Slick 1.8.1 jQuery plugin CSS (Sliders) -->
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<!-- Fancybox 3 jQuery plugin CSS (Open images and video in popup) -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+		<!-- AOS 2.3.4 jQuery plugin CSS (Animations) -->
+		<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+		<!-- FontAwesome CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+		<!-- Startup CSS (Styles for all blocks) - Remove ".min" if you would edit a css code -->
+		<link href="{% static 'landing_page_gen/css/style.css' %}" rel="stylesheet">
+		<!-- jQuery 3.5.1 -->
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	</head> 
+	<body>
+<!-- Navigation Mobile type 2 -->
+	<a class="open_menu color-main bg-light radius_full">
+		<i class="fas fa-bars lh-40">
+		</i>
+	</a>
+	<div class="navigation_mobile bg-light type2">
+		<a class="close_menu color-main">
+			<i class="fas fa-times">
+			</i>
+		</a>
+		<div class="px-40 pt-60 pb-60 text-center inner">
+			<div>
+				<a href="#about" class="f-heading f-22 link color-main mb-20">
+					About Us
+				</a>
+			</div>
+			<div>
+				<a href="#service" class="f-heading f-22 link color-main mb-20">
+					Services
+				</a>
+			</div>
+			<div>
+				<a href="#faq" class="f-heading f-22 link color-main mb-20">
+					FAQs & Service Area
+				</a>
+			</div>
+			<div>
+				<a href="#testimonial" class="f-heading f-22 link color-main mb-20">
+					Testimonials
+				</a>
+			</div>
+			<div>
+				<a href="#photos" class="f-heading f-22 link color-main mb-20">
+					Photos
+				</a>
+			</div>
+			
+			<div class="socials mt-60">
+				<a href="#" target="_blank" class="link color-main f-18 mx-10">
+					<i class="fab fa-twitter">
+					</i>
+				</a>
+				<a href="#" target="_blank" class="link color-main f-18 mx-10">
+					<i class="fab fa-facebook">
+					</i>
+				</a>
+				<a href="#" target="_blank" class="link color-main f-18 mx-10">
+					<i class="fab fa-dribbble">
+					</i>
+				</a>
+				<a href="#" target="_blank" class="link color-main f-18 mx-10">
+					<i class="fab fa-instagram">
+					</i>
+				</a>
+				<a href="#" target="_blank" class="link color-main f-18 mx-10">
+					<i class="fab fa-behance">
+					</i>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- Header 16 -->
+		<header class="pt-145 pb-115" style = "background:white !important;" data-bg-src="false" data-bg-src-2x="false">
+			<nav class="header_menu_16 pt-30 pb-30 mt-15">
+				<div class="container px-xl-0">
+					<div class="row justify-content-center">
+						<div class="col-xl-10" data-aos="fade-down" data-aos-delay="800">
+							<div class="row align-items-center">
+								<div class="col-lg-9 d-flex align-items-center f-18 medium">
+									<a href="#" class="mr-15 link img_link">
+										<img src="{{logo}}" alt="Logo" class="img-fluid">
+									</a>
+									<a href="#about" class="link mx-15 color-black">
+										About Us
+									</a>
+									<a href="#service" class="link mx-15 color-black">
+										Services
+									</a>
+									<a href="#testimonial" class="link mx-15 color-black">
+										Testimonials
+									</a>
+									<a href="#faq" class="link mx-15 color-black">
+										FAQs & Service Area
+									</a>
+									<a href="#photos" class="link mx-15 color-black">
+										Photos
+									</a>
+								</div>
+								<div class="col-lg-3 d-flex justify-content-end align-items-center">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="container pr-0 px-xl-0 color-black">
+				<div class="row justify-content-center">
+					<div class="col-xl-10">
+						<div class="row flex-column-reverse flex-md-row align-items-stretch text-center text-md-left">
+							<div class="col-lg-7 col-md-9 pt-40">
+								<div class="mb-3 d-xl-none">
+									<a href="#" class="link img_link">
+										<img src="{{logo}}" alt="Logo" class="img-fluid" data-aos="fade-down" data-aos-delay="0">
+									</a>
+								</div>
+								<h1 class="mb-20 big" data-aos="fade-down" data-aos-delay="0">
+									{{ company_name }}
+								</h1>
+								<div class="f-22 text-adaptive" data-aos="fade-down" data-aos-delay="200">
+									{{ company_tagline }}
+								</div>
+								<div class="mt-80 row blocks">
+                                    {% if bonded %}
+                                        <div class="mt-30 col-sm-4" data-aos="fade-down" data-aos-delay="400">
+                                            <i class="fas fa-user-shield f-50"></i>
+                                            <div class="mt-30 mb-25 semibold f-20 title">
+                                                Bonded
+                                            </div>
+                                            <div class="text-adaptive">
+                                                
+                                            </div>
+                                        </div>
+                                    {% endif %}	
+                                    {% if insured %}
+                                        <div class="mt-30 col-sm-4" data-aos="fade-down" data-aos-delay="400">
+                                            <i class="fas fa-shield-alt f-50"></i>
+                                            
+                                            <div class="mt-30 mb-25 semibold f-20 title">
+                                                Insured
+                                            </div>
+                                            <div class="text-adaptive">
+                                                
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                    {% if emergency %}
+                                        <div class="mt-30 col-sm-4" data-aos="fade-down" data-aos-delay="400">
+                                            <i class="fas fa-ambulance fa-50"></i>
+                                            <div class="mt-30 mb-25 semibold f-20 title">
+                                                Emergency Services
+                                            </div>
+                                            <div class="text-adaptive">
+                                                
+                                            </div>
+                                        </div>
+                                    {% endif %}	
+                                    {% if veteran %}
+                                        <div class="mt-30 col-sm-4" data-aos="fade-down" data-aos-delay="400">
+                                            <i class="fas fa-flag-usa fa-50"></i>
+                                            <div class="mt-30 mb-25 semibold f-20 title">
+                                                Veteran Owned
+                                            </div>
+                                            <div class="text-adaptive">
+                                                
+                                            </div>
+                                        </div>
+                                    {% endif %}	
+                                    {% if family_owned %}
+                                        <div class="mt-30 col-sm-4" data-aos="fade-down" data-aos-delay="400">
+                                            <i class="fas fa-heart fa-50"></i>
+                                            <div class="mt-30 mb-25 semibold f-20 title">
+                                                Family Owned
+                                            </div>
+                                            <div class="text-adaptive">
+                                                
+                                            </div>
+                                        </div>
+                                    {% endif %}	
+                                    {% if local_owned %}
+                                        <div class="mt-30 col-sm-4" data-aos="fade-down" data-aos-delay="400">
+                                            <i class="fas fa-home fa-50"></i>
+                                            
+                                            <div class="mt-30 mb-25 semibold f-20 title">
+                                                Local Owned
+                                            </div>
+                                            <div class="text-adaptive">
+                                                
+                                            </div>
+                                        </div>
+                                    {% endif %}	
+                                     {% if license_number %}
+                                        <div class="mt-30 col-sm-4" data-aos="fade-down" data-aos-delay="400">
+                                            <i class="fas fa-id-card fa-50"></i>
+                                            
+                                            <div class="mt-30 mb-25 semibold f-20 title">
+                                                Licensed
+                                            </div>
+                                            <div class="text-adaptive">
+                                                #{{license_number}}
+                                            </div>
+                                        </div>
+                                    {% endif %}							
+								</div>
+							</div>
+							<div class="d-flex align-items-center col-lg-5 col-md-3 " data-aos="fade-down" data-aos-delay="800">
+								<img src="{{hero_image}}" srcset="{{hero_image}}" alt="" class=" rounded shadow-sm mw-full img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Blog 15 -->
+			<section id="about" class="pt-100 pb-100 bg-light blog_15">
+				<div class="container px-xl-0">
+					<div class="row flex-column-reverse flex-md-row justify-content-between">
+						<div class="col-12 col-md-6 col-xl-6">
+							<h3 class="mb-40" data-aos="fade-down" data-aos-delay="0">
+								About Us
+							</h3>
+							<div class="mb-lg-5 mw-380 color-heading f-18 text-adaptive" data-aos="fade-down" data-aos-delay="200">
+								{{ about_us }}
+							</div>
+						</div>
+						<div class="mt-4 mt-md-0 mb-30 mb-md-0 col-12 col-md-6">
+							<a href="#" class="mb-55 link img_link w-full">
+								<img src="{{about_us_image}}"  alt="" class="w-full radius10" data-aos="fade-down" data-aos-delay="600">
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Feature 8 -->
+				<section id= "service" class="pt-105 pb-30 bg-light feature_8">
+					<div class="container px-xl-0">
+						<h2 class="mb-50 small text-lg-center" data-aos="fade-down" data-aos-delay="0">
+							Services
+						</h2>
+						<div class="row">
+                            {% for service in services %}
+							<div class="mb-40 col-md-6 col-lg-4 d-flex align-items-baseline" data-aos="fade-down" data-aos-delay="200">
+								<div class="ml-15 w-30 mr-15 flex-shrink-0 text-lg-center icon">
+									<i class="fas fa-code color-heading f-18">
+									</i>
+								</div>
+								<div class="inner">
+									<div class="mb-20 f-14 semibold text-uppercase sp-20 title">
+										{{ service.services_title }}
+									</div>
+									<div class="color-heading op-7 text-adaptive">
+										{{ service.services_description }}
+									</div>
+								</div>
+							</div>
+                            {% endfor %}
+							
+						</div>
+					</div>
+				</section>
+				<!-- Testimonial 3 -->
+					<section id = "testimonial" class="pt-85 pb-25 bg-light testimonial_3">
+						<div class="container px-xl-0">
+							<div class="row justify-content-center">
+								<div class="col-xl-10" data-aos="fade-down" data-aos-delay="0">
+									<h2 class="mb-55 small text-center">
+										Testimonials
+									</h2>
+								</div>
+							</div>
+							<div class="row justify-content-center justify-content-lg-start text-center ">
+
+                                {% for testimonial in testimonials %}
+								<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-60 block" data-aos="fade-down" data-aos-delay="0">
+									<div class="color-heading f-18 medium text-adaptive">
+										{{ testimonial.testimonial_description }}
+									</div>
+									<div class="mt-20 f-14 semibold text-uppercase sp-20">
+										{{ testimonial.testimonial_giver_rating }} <i class="fas fa-star"> {{ testimonial.testimonial_giver_name }} 
+														</i>
+									</div>
+									<div class="color-heading">
+										{{ testimonial.testimonial_giver_title }}
+									</div>
+								</div>
+                                {% endfor %}
+								
+							</div>
+						</div>
+					</section>
+					<!-- Content 18 -->
+						<section id = "faq" class="pt-75 pb-80 bg-light content_18">
+							<div class="container px-xl-0">
+                                <div class="row justify-content-center">
+                                    <div class="col-xl-10" data-aos="fade-down" data-aos-delay="0">
+                                        <h2 class="mb-55 small text-center">
+                                            FAQs & Service Area 
+                                        </h2>
+                                    </div>
+                                </div>
+								<div class="row">
+									<div class="col-lg-1">
+									</div>
+									<div class="col-lg-5" data-aos="fade-down" data-aos-delay="0">
+                                    {% for faq in faqs %}
+										<div class="opening_tabs">
+											<h3 class="pt-25 pb-25 f-14 semibold text-uppercase sp-20 tab_opener" data-aos="fade-down" data-aos-delay="0">
+												<span>
+													{{faq.question}}
+												</span>
+												<i class="fas fa-angle-right ml-10">
+												</i>
+											</h3>
+											<div class="color-heading tab_text">
+												<div class="pb-35">
+													{{faq.answer}}
+												</div>
+											</div>											
+										</div>
+                                    {% endfor %}
+									</div>
+									<div class="col-lg-6">
+                                        <img class = "img-fluid img-thumb"src= "https://www.freakyjolly.com/wp-content/uploads/2019/04/Pasted-into-Angular-87-Add-Google-Maps-with-Location-Search-in-Angular-2-plus-Applications-using-Angular-Google-Maps-Module-@agmcore-Easily.png">
+										
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- Showcase 2 -->
+							<section id = "photos" class="pt-105 pb-90 bg-light text-center showcase_2">
+								<div class="container px-xl-0">
+									<div class="row justify-content-center">
+										<div class="col-xl-8 col-lg-10">
+											<h2 class="small" data-aos="fade-down" data-aos-delay="0">
+												Photos
+											</h2>
+										</div>
+									</div>
+                                    
+									<div class="row">
+                                    {% for photo in gallery%}
+										<div class="col-md-4 col-sm-6" data-aos="fade-down" data-aos-delay="0">
+											<a href="#" class="mt-50 link img_link color-main">
+												<img src="{{ photo.gallery_photo.url }}" alt="" class="img-fluid radius10">
+                                                
+												
+											</a>
+										</div>
+                                    {% endfor %}
+                                    </div>                                    
+                                </div>
+
+								<!-- Footer 1 -->
+									<footer class="pt-75 pb-65 bg-light text-center footer_1">
+										<div class="container px-xl-0">
+											<div class="row justify-content-between align-items-center lh-40 links">
+												<div class="col-lg-4 col-sm-6 text-sm-right text-lg-left order-1 order-lg-0" data-aos="fade-down" data-aos-delay="200">
+													<a href="#about" class="link mr-15 color-main">
+														About Us
+													</a>
+													<a href="#service" class="link mx-15 color-main">
+														Services
+													</a>
+													<a href="#faq" class="link mx-15 color-main">
+														FAQs
+													</a>
+												</div>
+												<div class="mb-10 mb-lg-0 col-lg-auto order-0">
+													<a href="#" class="link img_link">
+														<img src="{{logo}}" alt="Logo" class="img-fluid" data-aos="fade-down" data-aos-delay="0">
+													</a>
+												</div>
+												<div class="col-lg-4 col-sm-6 text-sm-left text-lg-right order-2 order-lg-0" data-aos="fade-down" data-aos-delay="200">
+													<a href="#testimonial" class="link mr-15 color-main">
+														Testimonials
+													</a>
+													<a href="#" class="mx-15 link color-main">
+														<i class="fab fa-twitter">
+														</i>
+													</a>
+													<a href="#" class="mx-15 link color-main">
+														<i class="fab fa-facebook-square">
+														</i>
+													</a>
+													<a href="#" class="ml-15 link color-main">
+														<i class="fab fa-google-plus-g">
+														</i>
+													</a>
+												</div>
+											</div>
+											<div class="row justify-content-center">
+												<div class="mt-10 col-xl-4 col-lg-5 col-md-6 col-sm-8" data-aos="fade-down" data-aos-delay="0">
+													<div class="color-heading text-adaptive">
+														{{ company_tagline }}
+													</div>
+												</div>
+											</div>
+										</div>
+									</footer>
+		
+
+		<!-- gReCaptcha popup (uncomment if you need a recaptcha integration) -->
+		<!--
+		<div class="bg-dark op-8 grecaptcha-overlay"></div>
+		<div class="bg-light radius10 w-350 h-120 px-20 pt-20 pb-20 grecaptcha-popup">
+			<div class="w-full h-full d-flex justify-content-center align-items-center">
+				<div id="g-recaptcha" data-sitekey="PUT_YOUR_SITE_KEY_HERE"></div>
+			</div>
+		</div>
+		<script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
+		-->
+		<!-- Bootstrap 4.5.2 JS -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+		<!-- Fancybox 3 jQuery plugin JS (Open images and video in popup) -->
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+		<!-- 
+			Google maps JS API 
+			Don't forget to replace the key "AIzaSyDP6Ex5S03nvKZJZSvGXsEAi3X_tFkua4U" to your own! 
+			Learn how to get a key: https://help.designmodo.com/article/startup-google-maps-api/ 
+		-->
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDP6Ex5S03nvKZJZSvGXsEAi3X_tFkua4U"></script>
+		<!-- Slick 1.8.1 jQuery plugin JS (Sliders) -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<!-- AOS 2.3.4 jQuery plugin JS (Animations) -->
+		<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+		<!-- Maskedinput jQuery plugin JS (Masks for input fields) -->
+		 <script src="{% static 'landing_page_gen/js/jquery.maskedinput.min.js' %}"></script>
+		<!-- Startup JS (Custom js for all blocks) -->
+		<script src="{% static 'landing_page_gen/js/script.js' %}"></script>
+       
+	</body>
+</html>

@@ -1,0 +1,13 @@
+.selected {
+    filter: brightness(30%);
+    border: 2px, rgb(49, 48, 48);
+}
+
+.unsplash-photo {
+    cursor:pointer;
+}
+
+/* body {
+    background-image: linear-gradient(to right, rgb(143, 142, 211) , rgb(137, 82, 192));
+} */
+
